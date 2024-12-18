@@ -1,8 +1,12 @@
 import Link from "next/link";
 
-export default function Nav() {
+
+
+export default function Navigation(
+  { className }: Readonly<{ className?: string}>
+) {
   return (
-    <nav>
+    <nav className={className}>
       <ul className="flex justify-center items-center gap-2">
         <li>
           <Link href="/">Home</Link>
